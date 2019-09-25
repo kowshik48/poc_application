@@ -12,7 +12,7 @@ pipeline{
 		}
 stage('Deployment started'){
 			steps{
-				sh 'cd /home/ubuntu/ansible; sudo ansible-playbook -i ec2.py -u devops war-deploy.yml'
+				sh 'cd /home/ubuntu/ansible; sudo ansible-playbook -i ec2.py -u devops war_deploy.yml'
 			}
 		}
 stage('Deployment ended'){
